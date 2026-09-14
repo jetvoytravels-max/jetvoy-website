@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Jetvoy Tours & Travels | Premium Travel Services</title>
+<style>
+:root{--blue:#148bc5;--navy:#103a65;--sky:#eaf8ff;--white:#fff;--muted:#617789}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#29485f;line-height:1.6;background:#fff}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.98);box-shadow:0 2px 18px #103a6514}
+nav{height:80px;max-width:1220px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo img{width:140px;height:72px;object-fit:contain}.links{display:flex;gap:20px;list-style:none}.links a{text-decoration:none;color:var(--navy);font-weight:bold;font-size:14px}
+.btn{display:inline-block;background:var(--blue);color:white;text-decoration:none;padding:13px 24px;border-radius:30px;border:0;font-weight:bold;cursor:pointer}
+.hero{background:linear-gradient(135deg,#f8fdff,#dff5ff);min-height:600px;position:relative;overflow:hidden}.hero:after{content:"✈";position:absolute;right:5%;top:22%;font-size:260px;opacity:.1;transform:rotate(-20deg)}
+.wrap{max-width:1220px;margin:auto;padding:0 20px}.hero .wrap{min-height:600px;display:flex;align-items:center;position:relative;z-index:1}
+.hero-content{max-width:760px}.tag{display:inline-block;padding:8px 15px;border-radius:22px;background:#fff;color:var(--blue);font-size:13px;font-weight:bold;margin-bottom:18px;border:1px solid #d4edf8}
+h1{font-size:60px;line-height:1.08;color:var(--navy);margin-bottom:18px}h1 span{color:var(--blue)}.hero p{font-size:20px;color:#567086;margin-bottom:28px;max-width:650px}.hero-buttons{display:flex;gap:14px;flex-wrap:wrap}.btn.light{background:white;color:var(--navy);border:1px solid #cfe8f4}
+section{padding:78px 20px}.title{text-align:center;margin-bottom:42px}.title small{color:var(--blue);font-weight:bold;letter-spacing:2px}.title h2{font-size:40px;color:var(--navy);margin:6px 0}.title p{color:var(--muted)}
+.quick{max-width:1120px;margin:-35px auto 0;background:#fff;position:relative;z-index:3;border-radius:18px;box-shadow:0 15px 40px #103a6517;padding:25px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.quick div{text-align:center;border-right:1px solid #e6eff4}.quick div:last-child{border:0}.quick b{display:block;color:var(--blue);font-size:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{background:white;border:1px solid #e1eff5;border-radius:20px;padding:28px;box-shadow:0 8px 25px #103a6509}.icon{font-size:42px;margin-bottom:12px}.card h3{color:var(--navy);margin-bottom:8px}.card a{display:inline-block;margin-top:15px;color:var(--blue);font-weight:bold;text-decoration:none}
+.offers{background:#f4fbfe}.offer-card{border-radius:22px;padding:30px;background:linear-gradient(135deg,var(--navy),var(--blue));color:white}.offer-card .route{font-size:29px;font-weight:bold;margin:12px 0}.offer-card p{color:#dff4ff}.offer-card .price{font-size:22px;font-weight:bold;margin:15px 0}
+.package{overflow:hidden;border-radius:20px;background:#fff;box-shadow:0 12px 30px #103a6510}.package-head{padding:30px;background:linear-gradient(135deg,#168bc5,#103a65);color:#fff;min-height:150px;display:flex;align-items:flex-end}.package-body{padding:25px}.package li{list-style:none;padding:8px 0;border-bottom:1px solid #edf3f6}.package li:before{content:"✓ ";color:var(--blue);font-weight:bold}
+.dest{height:230px;border-radius:20px;overflow:hidden;position:relative;background:linear-gradient(135deg,#bde9fa,#187fb7);display:flex;align-items:center;justify-content:center;font-size:72px}.dest:nth-child(2){background:linear-gradient(135deg,#aee4f7,#125080)}.dest:nth-child(3){background:linear-gradient(135deg,#d8f5ff,#2b98c9)}.dest span{position:absolute;bottom:0;left:0;right:0;padding:15px;background:linear-gradient(transparent,#06233e);color:white;font-size:20px;font-weight:bold}
+.gallery{background:#f4fbfe}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.gallery-item{height:190px;border-radius:16px;background:linear-gradient(145deg,#d7f2fc,#66bde2);display:flex;align-items:center;justify-content:center;font-size:55px}.gallery-item:nth-child(2){background:linear-gradient(145deg,#d6f5ff,#168bc5)}.gallery-item:nth-child(3){background:linear-gradient(145deg,#bcecff,#125080)}.gallery-item:nth-child(4){background:linear-gradient(145deg,#e6f8ff,#6ebfdd)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.why-box{min-height:350px;border-radius:25px;background:linear-gradient(135deg,#dff6ff,#a9e0f5);display:flex;align-items:center;justify-content:center;font-size:130px}.ticks p{padding:10px 0;font-weight:bold}.ticks p:before{content:"✓";color:var(--blue);margin-right:10px}
+.reviews{background:#f4fbfe}.review{background:#fff;padding:28px;border-radius:18px;box-shadow:0 8px 22px #103a6509}.review p{font-style:italic}.review b{display:block;margin-top:15px;color:var(--blue)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}.formbox,.infobox{padding:34px;border-radius:22px}.formbox{border:1px solid #dcecf3}.infobox{background:var(--navy);color:white}.infobox p{margin:15px 0;color:#d9eef8}.infobox h3,.formbox h3{font-size:29px;margin-bottom:20px}.formbox h3{color:var(--navy)}form{display:grid;gap:14px}input,select,textarea{padding:15px;border:1px solid #cfe5ef;border-radius:10px;font:inherit}textarea{min-height:110px}
+.map{margin-top:28px;border-radius:18px;background:#e6f7fd;padding:35px;text-align:center;color:var(--navy)}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:62px;height:62px;border-radius:50%;background:#25d366;color:white;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:101;box-shadow:0 8px 22px #0003}
+footer{background:#092946;color:#d7ebf5;text-align:center;padding:25px}
+@media(max-width:900px){.links{display:none}.grid4{grid-template-columns:repeat(2,1fr)}.why,.contact{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}h1{font-size:46px}}
+@media(max-width:560px){h1{font-size:36px}.grid4,.grid3,.gallery-grid{grid-template-columns:1fr}.quick{grid-template-columns:repeat(2,1fr);margin:0;border-radius:0}.quick div{padding:10px}.title h2{font-size:31px}.hero,.hero .wrap{min-height:530px}.hero:after{display:none}section{padding:60px 16px}}
+</style>
+<style>
+.flight-demo{background:linear-gradient(135deg,#eaf8ff,#fff);padding:70px 0}
+.booking-card,.setup-card{background:#fff;border-radius:20px;padding:24px;box-shadow:0 12px 35px rgba(16,58,101,.12);margin-top:24px}
+.trip-tabs{display:flex;gap:12px;margin-bottom:18px}.trip-tabs button{border:0;padding:10px 18px;border-radius:25px;background:#eaf8ff;color:#103a65;font-weight:bold;cursor:pointer}.trip-tabs button.active{background:#148bc5;color:#fff}
+.search-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.search-grid input,.search-grid select{padding:14px;border:1px solid #cfe4ef;border-radius:10px;width:100%}
+.swap{background:#103a65;color:#fff;border:0;border-radius:50%;width:42px;height:42px;cursor:pointer}
+.demo-results{display:none;margin-top:24px}.flight-result{background:#fff;border:1px solid #dcecf4;border-radius:16px;padding:20px;margin:12px 0;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.fare{font-size:22px;font-weight:bold;color:#148bc5}.setup-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{padding:20px;border-radius:15px;background:#f7fcff;border:1px solid #dcecf4}.step b{display:block;color:#148bc5;font-size:20px;margin-bottom:6px}
+@media(max-width:800px){.search-grid{grid-template-columns:1fr}.setup-grid{grid-template-columns:1fr 1fr}.flight-result{align-items:flex-start}}@media(max-width:500px){.setup-grid{grid-template-columns:1fr}.trip-tabs{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header><nav><a class="logo" href="#home"><img src="jetvoy-logo.jpg" alt="Jetvoy Tours and Travels"></a><ul class="links"><li><a href="#home">HOME</a></li><li><a href="#umrah">UMRAH</a></li><li><a href="#tours">TOURS</a></li><li><a href="#gallery">GALLERY</a></li><li><a href="#contact">CONTACT</a></li></ul><a class="btn" href="https://wa.me/919567491544?text=Hello%20Jetvoy%20Tours%20%26%20Travels%21%0A%0AI%20would%20like%20to%20make%20a%20booking.%0A%0APlease%20provide%20more%20details%20about%3A%0A-%20Flight%20Booking%0A-%20Visa%20Services%0A-%20Umrah%20Packages%0A-%20Tour%20Packages%0A%0AThank%20you%21" target="_blank" rel="noopener">BOOK NOW</a></nav></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-content"><div class="tag">✈ JETVOY TOURS & TRAVELS</div><h1>Explore More.<br>Travel with <span>Confidence.</span></h1><p>Premium travel services for flights, visas, Umrah and unforgettable holiday experiences.</p><div class="hero-buttons"><a class="btn" href="https://wa.me/919567491544?text=Hello%20Jetvoy%20Tours%20%26%20Travels%21%0A%0AI%20would%20like%20to%20make%20a%20booking.%0A%0APlease%20provide%20more%20details%20about%3A%0A-%20Flight%20Booking%0A-%20Visa%20Services%0A-%20Umrah%20Packages%0A-%20Tour%20Packages%0A%0AThank%20you%21" target="_blank" rel="noopener">START YOUR JOURNEY</a><a class="btn light" href="#services">VIEW SERVICES</a></div></div></div></section>
+
+<div class="quick"><div><b>✈ Flights</b><small>Domestic & International</small></div><div><b>📄 Visa</b><small>Travel Assistance</small></div><div><b>🕋 Umrah</b><small>Journey Support</small></div><div><b>🌍 Tours</b><small>Holiday Packages</small></div></div>
+
+
+
+<section><div class="wrap"><div class="title"><small>OUR SERVICES</small><h2>Everything for Your Journey</h2></div><div class="grid4">
+<div class="card"><div class="icon">✈️</div><h3>Flight Booking</h3><p>Domestic and international flight booking assistance.</p><a href="#contact">Book Flight →</a></div>
+<div class="card"><div class="icon">📄</div><h3>Visa Services</h3><p>Guidance and assistance for travel visa enquiries.</p><a href="#contact">Visa Enquiry →</a></div>
+<div class="card"><div class="icon">🕋</div><h3>Umrah Packages</h3><p>Comfortable and well-planned Umrah travel support.</p><a href="#umrah">View Details →</a></div>
+<div class="card"><div class="icon">🌍</div><h3>Tour Packages</h3><p>Explore domestic and international destinations.</p><a href="#tours">Explore Tours →</a></div>
+</div></div></section>
+
+<section id="umrah"><div class="wrap"><div class="title"><small>SPIRITUAL JOURNEY</small><h2>Premium Umrah Packages</h2><p>Enquire with Jetvoy for a package tailored to your travel requirements.</p></div><div class="grid3">
+<div class="package"><div class="package-head"><h3>🕋 Economy Umrah</h3></div><div class="package-body"><ul><li>Flight Assistance</li><li>Visa Guidance</li><li>Accommodation Options</li><li>Travel Support</li></ul><br><a class="btn" href="#contact">ENQUIRE NOW</a></div></div>
+<div class="package"><div class="package-head"><h3>🕋 Standard Umrah</h3></div><div class="package-body"><ul><li>Personalized Planning</li><li>Travel Coordination</li><li>Hotel Options</li><li>Dedicated Support</li></ul><br><a class="btn" href="#contact">ENQUIRE NOW</a></div></div>
+<div class="package"><div class="package-head"><h3>🕋 Premium Umrah</h3></div><div class="package-body"><ul><li>Premium Travel Planning</li><li>Flexible Options</li><li>Comfort-focused Journey</li><li>Personal Assistance</li></ul><br><a class="btn" href="#contact">ENQUIRE NOW</a></div></div>
+</div></div></section>
+
+<section id="tours"><div class="wrap"><div class="title"><small>POPULAR DESTINATIONS</small><h2>Where Do You Want to Go?</h2></div><div class="grid3"><div class="dest">🏙️<span>Dubai</span></div><div class="dest">🕌<span>Saudi Arabia</span></div><div class="dest">🏝️<span>International Holidays</span></div></div></div></section>
+
+<section id="gallery" class="gallery"><div class="wrap"><div class="title"><small>JETVOY GALLERY</small><h2>Travel Inspiration</h2><p>Premium gallery placeholders ready for your own office and travel photos.</p></div><div class="gallery-grid"><div class="gallery-item">✈️</div><div class="gallery-item">🕋</div><div class="gallery-item">🌍</div><div class="gallery-item">🏖️</div></div></div></section>
+
+<section><div class="wrap why"><div class="why-box">✈️</div><div><small style="color:#148bc5;font-weight:bold;letter-spacing:2px">WHY CHOOSE JETVOY</small><h2 style="font-size:40px;color:#103a65;margin:8px 0 15px">Your Trusted Travel Partner</h2><p>From your first enquiry to your travel planning, Jetvoy is here to make the journey easier.</p><div class="ticks"><p>Professional travel assistance</p><p>Flight, Visa, Umrah & Tour services</p><p>Personalized booking enquiries</p><p>Fast WhatsApp support</p></div><br><a class="btn" href="https://wa.me/919567491544?text=Hello%20Jetvoy%20Tours%20%26%20Travels%21%0A%0AI%20would%20like%20to%20make%20a%20booking.%0A%0APlease%20provide%20more%20details%20about%3A%0A-%20Flight%20Booking%0A-%20Visa%20Services%0A-%20Umrah%20Packages%0A-%20Tour%20Packages%0A%0AThank%20you%21" target="_blank" rel="noopener">CONTACT JETVOY</a></div></div></section>
+
+<section class="reviews"><div class="wrap"><div class="title"><small>TRAVEL EXPERIENCE</small><h2>Customer Reviews</h2><p>You can replace these sample reviews with real customer feedback.</p></div><div class="grid3"><div class="review"><p>“Professional and helpful support for our travel enquiry.”</p><b>★★★★★ Happy Traveller</b></div><div class="review"><p>“Easy communication and personalized travel assistance.”</p><b>★★★★★ Jetvoy Customer</b></div><div class="review"><p>“A convenient travel partner for our journey planning.”</p><b>★★★★★ Travel Customer</b></div></div></div></section>
+
+
+<section id="flight-booking" class="flight-demo"><div class="wrap">
+<div class="title"><small>JETVOY FLIGHT BOOKING</small><h2>Search Your Flight</h2><p>Premium demo flight booking interface</p></div>
+<div class="booking-card">
+<div class="trip-tabs"><button class="active" onclick="setTrip(this,'One Way')">One Way</button><button onclick="setTrip(this,'Round Trip')">Round Trip</button></div>
+<div class="search-grid"><input id="fromAirport" value="Kozhikode (CCJ)" placeholder="From Airport"><input id="toAirport" value="Dubai (DXB)" placeholder="To Airport"><input id="departure" type="date"><input id="returnDate" type="date"><select id="travellers"><option>1 Adult</option><option>2 Adults</option><option>3 Adults</option><option>2 Adults + 1 Child</option></select></div>
+<div style="display:flex;gap:12px;align-items:center;margin-top:18px"><button class="swap" onclick="swapAirports()">↔</button><button class="btn" onclick="showFlights()">🔍 SEARCH FLIGHTS</button></div>
+</div>
+<div id="demoResults" class="demo-results"><div class="title"><h2>Available Flights (Demo)</h2><p>Sample results — live API not connected yet</p></div>
+<div class="flight-result"><div><b>✈️ IndiGo</b><p>CCJ → DXB · 10:30 – 13:45</p><small>⏱ 4h 15m · 🧳 30 KG</small></div><div class="fare">₹12,999</div><button class="btn" onclick="bookDemo('IndiGo')">BOOK NOW</button></div>
+<div class="flight-result"><div><b>✈️ Air India Express</b><p>CCJ → DXB · 14:10 – 17:30</p><small>⏱ 4h 20m · 🧳 30 KG</small></div><div class="fare">₹13,750</div><button class="btn" onclick="bookDemo('Air India Express')">BOOK NOW</button></div>
+<div class="flight-result"><div><b>✈️ flydubai</b><p>CCJ → DXB · 21:00 – 00:20</p><small>⏱ 4h 20m · 🧳 30 KG</small></div><div class="fare">₹14,500</div><button class="btn" onclick="bookDemo('flydubai')">BOOK NOW</button></div></div>
+</div></section>
+<section id="flight-setup"><div class="wrap"><div class="title"><small>FLIGHT BOOKING SETUP</small><h2>Live API Setup – Demo</h2><p>Steps required before real-time flight booking goes live</p></div><div class="setup-grid"><div class="step"><b>1</b><strong>Choose API Provider</strong><p>Connect an authorized travel supplier or GDS.</p></div><div class="step"><b>2</b><strong>API Connection</strong><p>Add secure API credentials to the website backend.</p></div><div class="step"><b>3</b><strong>Test Search</strong><p>Test flight availability, fares and booking flow.</p></div><div class="step"><b>4</b><strong>Go Live</strong><p>Enable real bookings, payments and ticketing.</p></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="title"><small>CONTACT US</small><h2>Let's Plan Your Journey</h2></div><div class="contact"><div class="formbox"><h3>Travel Enquiry</h3><form onsubmit="sendWA(event)"><input id="name" placeholder="Your Name" required><input id="phone" placeholder="Phone Number" required><select id="service"><option>Flight Booking</option><option>Visa Services</option><option>Umrah Packages</option><option>Tour Packages</option></select><textarea id="msg" placeholder="Destination, travel date and your enquiry"></textarea><button class="btn" type="submit">SEND ON WHATSAPP</button></form></div><div class="infobox"><h3>Jetvoy Tours & Travels</h3><p>📞 +91 9567491544</p><p>📍 Vailathur Road, Kozhichena<br>Kalathingal Tower<br>PIN 676508</p><p>✈ Flight Booking</p><p>📄 Visa Services</p><p>🕋 Umrah Packages</p><p>🌍 Tour Packages</p><a class="btn light" href="https://wa.me/919567491544?text=Hello%20Jetvoy%20Tours%20%26%20Travels%21%0A%0AI%20would%20like%20to%20make%20a%20booking.%0A%0APlease%20provide%20more%20details%20about%3A%0A-%20Flight%20Booking%0A-%20Visa%20Services%0A-%20Umrah%20Packages%0A-%20Tour%20Packages%0A%0AThank%20you%21" target="_blank" rel="noopener">WHATSAPP BOOKING</a></div></div>
+<div class="map"><h3>📍 Jetvoy Office Location</h3><p>Google Maps embed can be added here after confirming your exact Google Maps business location/link.</p></div></div></section>
+
+<a class="whatsapp" href="https://wa.me/919567491544?text=Hello%20Jetvoy%20Tours%20%26%20Travels%21%0A%0AI%20would%20like%20to%20make%20a%20booking.%0A%0APlease%20provide%20more%20details%20about%3A%0A-%20Flight%20Booking%0A-%20Visa%20Services%0A-%20Umrah%20Packages%0A-%20Tour%20Packages%0A%0AThank%20you%21" target="_blank" rel="noopener">💬</a>
+<footer>© 2026 Jetvoy Tours & Travels · Premium Travel Services ✈️</footer>
+<script>
+function sendWA(e){e.preventDefault();const n=name.value,p=phone.value,s=service.value,m=msg.value;const t=`Hello Jetvoy Tours & Travels!%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0AEnquiry: ${encodeURIComponent(m)}`;window.open('https://wa.me/919567491544?text='+t,'_blank')}
+</script>
+<script>
+let tripType='One Way';
+function setTrip(el,type){tripType=type;document.querySelectorAll('.trip-tabs button').forEach(b=>b.classList.remove('active'));el.classList.add('active');document.getElementById('returnDate').style.display=type==='Round Trip'?'block':'none'}
+function swapAirports(){let a=fromAirport.value;fromAirport.value=toAirport.value;toAirport.value=a}
+function showFlights(){document.getElementById('demoResults').style.display='block';document.getElementById('demoResults').scrollIntoView({behavior:'smooth'})}
+function bookDemo(airline){const t='Hello Jetvoy Tours & Travels!%0A%0AI want to book a demo flight.%0AAirline: '+encodeURIComponent(airline)+'%0AFrom: '+encodeURIComponent(fromAirport.value)+'%0ATo: '+encodeURIComponent(toAirport.value)+'%0ATrip: '+encodeURIComponent(tripType);window.open('https://wa.me/919567491544?text='+t,'_blank')}
+</script>
+</body></html>
